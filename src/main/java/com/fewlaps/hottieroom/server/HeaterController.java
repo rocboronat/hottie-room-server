@@ -10,6 +10,6 @@ public class HeaterController {
     @RequestMapping("/heater")
     public double heater(@RequestParam(value = "temperature") String temperature) {
         Application.repository.setActualTemperature(Double.valueOf(temperature));
-        return Application.repository.getDesiredTemperature();
+        return "" + Application.repository.getDesiredTemperature();
     }
 }
