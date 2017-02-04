@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HeaterController {
 
     @RequestMapping("/heater")
-    public double heater(@RequestParam(value = "temperature") String temperature) {
+    public String heater(@RequestParam(value = "temperature") String temperature) {
         Application.repository.setActualTemperature(Double.valueOf(temperature));
         return "" + Application.repository.getDesiredTemperature();
     }

@@ -12,7 +12,7 @@ apply plugin: 'spring-boot'
 
 jar {
     baseName = 'hottieroom'
-    version =  '1.0.0'
+    version =  '1.0.2'
 }
 
 repositories {
