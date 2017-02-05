@@ -10,7 +10,7 @@ public class RemoteController {
     @RequestMapping("/remote")
     public double remote(@RequestParam(value = "temperature", required = false) String temperature) {
         if (temperature != null) {
-            Application.repository.setDesiredTemperature(Double.valueOf(temperature));
+            Application.repository.setDesiredTemperature(Integer.valueOf(temperature));
         }
         return Application.repository.getActualTemperature();
     }

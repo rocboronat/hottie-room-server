@@ -5,7 +5,7 @@ public class Repository {
     private static final int INVALID_VALUE = -42;
 
     private double actualTemperature = INVALID_VALUE;
-    private double desiredTemperature = INVALID_VALUE;
+    private int desiredTemperature = INVALID_VALUE;
 
     public double getActualTemperature() {
         return actualTemperature;
@@ -15,11 +15,11 @@ public class Repository {
         this.actualTemperature = actualTemperature;
     }
 
-    public double getDesiredTemperature() {
+    public int getDesiredTemperature() {
         return desiredTemperature;
     }
 
-    public void setDesiredTemperature(double desiredTemperature) {
+    public void setDesiredTemperature(int desiredTemperature) {
         this.desiredTemperature = desiredTemperature;
     }
 }
